@@ -5,11 +5,11 @@ Node.js doesn't natively support ES6 imports. It uses CommonJS module system. Ho
 
 ## Installing babel
 
-npm install @babel/core @babel/node --save-dev
+```npm install @babel/core @babel/node --save-dev```
 
 ## Adding babel presets (Optional)
 
-npm install @babel/preset-env --save-dev
+```npm install @babel/preset-env --save-dev```
 
 ### Create a .babelrc file
 
