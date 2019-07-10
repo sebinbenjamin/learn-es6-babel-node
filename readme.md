@@ -28,3 +28,9 @@ npm install @babel/preset-env --save-dev
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 ```
+
+## Running npm script
+Using the terminal, type the commmand to run the npm task added ('anyTaskName') to the 'scripts' in last step.
+
+```npm run anyTaskName```
+
