@@ -1,5 +1,5 @@
 //es6
- import { PI, diag, square, add } from "./apis";
+ import { PI, diag, square, add } from "./moduleA.js";
 //  import * as apiModule from "./apis";
 
  console.log(PI); 

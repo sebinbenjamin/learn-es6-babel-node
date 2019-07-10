@@ -24,7 +24,7 @@ npm install @babel/preset-env --save-dev
 ## Add the babel-node start script to npm script in package.json
 ```
   "scripts": {
-    "anyTaskName": "nodemon --exec babel-node mainModule.js",
+    "anyTaskName": "nodemon --exec babel-node src/mainModule.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 ```
