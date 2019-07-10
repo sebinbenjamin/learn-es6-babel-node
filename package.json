@@ -1,0 +1,19 @@
+{
+  "name": "es6-imports-babel-node",
+  "version": "1.0.0",
+  "description": "Demonstrates how to use babel to get es6 import in node. ",
+  "main": "index.js",
+  "scripts": {
+    "anyTaskName": "nodemon --exec babel-node mainModule.js",
+    "demoTask":"echo 'How are you ?'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebin Benjamin",
+  "license": "GPLv3",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.4"
+  }
+}
