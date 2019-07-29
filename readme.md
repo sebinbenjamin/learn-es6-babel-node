@@ -1,7 +1,7 @@
 # Using es6 imports in Node.js
 Node.js doesn't natively support ES6 imports. It uses CommonJS module system. However, Babel enables the use of ES6 modules in node. Babel basically transpiles all source files to ES5 and CommonJS so that it works natively.
 
-# Steps to get es6 in node
+# Steps to run es6 in node
 
 ## Installing babel
 
@@ -34,3 +34,26 @@ Using the terminal, type the commmand to run the npm task added ('anyTaskName') 
 
 ```npm run anyTaskName```
 
+# Steps to use VS code debugger 
+
+## Installing babel
+```npm install @babel/core @babel/cli --save-dev```
+
+## Add the babel compile script to npm script in package.json
+```
+  "scripts": {
+       "build": "babel  src --out-dir out  --source-maps"
+  }
+```
+
+## Add debug configuration in launch.json
+We can use `preLaunchTask` to transpile es6 before running 
+```
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug from Source Maps",
+      "program": "${workspaceFolder}/out/index.js",
+      "preLaunchTask": "npm: build",
+    }
+```
